@@ -1,0 +1,20 @@
+########### PORT ###########
+PORT
+
+########### MONGO_URI #########
+MONGO_URI
+
+######### JWT_SECRET #########
+JWT_SECRET
+
+
+######### redisURL #########
+redisURL
+
+###### SESSION_SECRET #########
+SESSION_SECRET
+
+############ Cloudinary #########
+CLOUDINARY_CLOUD_NAME
+CLOUDINARY_API_KEY
+CLOUDINARY_API_SECRET

@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "4000:4000"
+    environment:
+      MONGO_URI: "mongodb+srv://victorbarny4:s62BaGKhbPqzULi1@social.doijvjt.mongodb.net/"
+      redisURL: "rediss://red-co18cita73kc73f4ck40:O6sZyyxHtmuleOXN8Kq8dWH187Bcfoeq@oregon-redis.render.com:6379"
+    depends_on:
+      - redis
+
+  mongo:
+    image: mongo:latest
+    container_name: mongo-db
+    ports:
+      - "27017:27017"
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
